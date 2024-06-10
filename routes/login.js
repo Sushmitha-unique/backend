@@ -14,7 +14,7 @@ router.post("/",async (req,res)=>{
                     }
                 }
                   
-           const token = jwt.sign(data,'secret_ecom')
+           const token = jwt.sign(data,'secret_ecom',{ expiresIn: '2h' })
             res.json({success:true,token})
             }
             else{
