@@ -9,7 +9,7 @@ const cors = require('cors');
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect("use your own database storeage value", {
+mongoose.connect("mongodb+srv://sushmithasvecit15:2OrcqYvHtTE5uUih@cluster0.wig7idi.mongodb.net/ecommerce", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
